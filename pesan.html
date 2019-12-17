@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>K-POP Packages</title>
+</head>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" >
+		<style type="text/css">
+		body{
+		background-image:url(korea16.jpg);
+		background-size: cover;
+		font-family: cursive;
+		 }
+.form{
+	width: 600px;
+	height: 800px;
+	background:#4169E1;
+	padding: 10px 30px 30px 30px;
+	border-radius: 30px;
+	margin-top:80px;
+
+}
+.tulisan{
+	color: white;
+	text-align: center;
+}
+.tulis{
+  color: black;
+  text-align: left;
+}
+.input-container{
+	width: 100%;
+	margin-bottom: 15px;
+	display: list-item;
+}
+.input-field{
+	width: 80%;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+.input-field:focus{
+	border: 2px solid #557A7D
+}
+.button{
+	margin: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+</style>
+<body>
+<center>
+      <div class="form">
+        <p class="tulisan">PESANAN</p>
+        <p class="tulis">Nama Konser</p>
+        <div class="input-container">
+        <select class="input-field">
+          <option>Nama Konser</option>
+          <option>EXO - Exploration</option>
+          <option>NCT 127 - NEO CITY in Seoul</option>
+      <option>BTS- Speak Yourself</option>
+      <option>Red Velvet - Red Room</option>
+      <option>Blackpink - In Your Area</option>
+        </select>
+         <p class="tulis">Jenis Tiket</p>
+        <div class="input-container">
+        <select class="input-field">
+          <option>Jenis Tiket</option>
+          <option>Blue Zone 1</option>
+          <option>Red Zone 1</option>
+      <option>Blue Zone 2</option>
+      <option>Red Zone 2</option>
+      <option>Yellow Zone</option>
+        </select>
+        <p class="tulis">Jumlah Tiket</p>
+        <div class="input-container">
+        <input class="input-field" type="text" name="Jumlah" placeholder="Jumlah" id="Jumlah">
+        <p class="tulisan">Isilah data diri anda!</p>
+        <p class="tulis">Nama : </p>
+        <div class="input-container">
+        <input class="input-field" type="text" name="Nama" placeholder="Nama" id="Nama">
+        <p class="tulis">Telepon : </p>
+        <div class="input-container">
+        <input class="input-field" type="text" name="Telepon" placeholder="Telepon" id="Telepon">
+        <p class="tulis">Alamat : </p>
+        <div class="input-container">
+        <input class="input-field" type="text" name="Alamat" placeholder="Alamat" id="Alamat">
+        <p class="tulis">Email : </p>
+        <div class="input-container">
+        <input class="input-field" type="text" name="Email" placeholder="Email" id="Email">
+    	</div>
+  		<div class="button" id="myBtn"><input type="submit" value="Submit"/>
+  		<br>
+  		<br>
+  		<a href="kpop packages.html" class="button2">Back</a>
+</center>
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Data Anda telah masuk");
+});
+</script>
+
+</form>
+</div>
+
+</body>
+</html>
