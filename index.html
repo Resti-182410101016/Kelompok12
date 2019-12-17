@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
+	<title>Sign In</title>
+  <link rel="stylesheet" type="text/css" href="signin.css">
 </head>
 <link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" type="text/css" >
-		<style type="text/css">
-		body{
-		background-image:url(korea1.jpg);
-		background-size: cover;
-		font-family: cursive;
-		color: black;
-		font-size: 100%
-		 }
+<style type="text/css">
+body{
+  background-image:url(korea15.jpg);
+  background-size: cover;
+  font-family: cursive;
+   }
 .header {
   color: black;
   padding: 5px;
-  text-align: left;
+  text-align: center;
   font-family: Trebuchet MS;
 }
 h1 {
@@ -32,65 +30,99 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}	
-div {
-  padding: 0px;
 }
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #4CAF50;
+.login{
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
 }
-img {
-  float: right;
+.form{
+  width: 350px;
+  background:#4169E1;
+  padding: 8px 30px 30px 30px;
+  border-radius: 25px;
+  margin-top:-80px;
 }
-
-p {
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
-}
-
-a {
-  text-decoration: none;
-  color: red;
-}
-b{
-  text-decoration: none;
+.tulisan_login{
   color: white;
+  text-align: center;
 }
-
+.input-container i{
+  position: absolute;
+}
+.input-container{
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.input-field{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.input-field:focus{
+  border: 2px solid #557A7D
+}
+.button{
+  margin: 5px;
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
 </style>
+
+
 <body>	
-<div class="header">
-  <h1 class="judul">Sarangheo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tour&Travel</h1>
-</div>
-	
-		<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="packagess.html">Packages</a></li>
-  <li><a href="testimoni.html">testimoni</a></li>
-  <li><a href="about us.html">About Us</a></li>
-  <li><a href="galeri.html">Galeri</a></li>
-  <li style="float:right"><a class="active" href="signin.html">Sign In</a></li>
-   <li style="float:right"><a class="active" href="signup.html">Sign Up</a></li>
-        </ul>
-        <div>
-  <center><h1 class="welcome">WELCOME</h1></center>
- <h3><p><img src="korea6.jpg" style="width:450px;height:300px;margin-left:15px;"><a>Sarangheo Tour and Travel</a>&nbsp;<b>merupakan sebuah agen tour yang menyediakan paket perjalanan ke korea. Kami berpengalaman selama 5 Tahun untuk menghandle Liburan ke Korea dengan Harga Paket lebih kompetitif dengan service terbaik dan pasti berangkat. Selain itu, kami membantu proses Visa dengan cepat dan  berpengalaman untuk seluruh Indonesia. Ada beberapa paket yang ditawarkan seperti paket musim dingin,musim gugur serta melayani tour privat dengan kunjungan yang diinginkan. Kami selalu memberikan service terbaik dan memberikan pengalaman liburan menjadi momen sulit dilupakan. Dokumentasi Fotografi selama Perjalanan Tour Anda lebih Indah </p></h3></b>
-</div>
-</center>
+  <center>
+	<div class="header">
+	<h1>Sarangheo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tour&Travel</h1>
+	</div>
+  </center>
+     <div class="login">
+      <div class="form">
+        <p class="tulisan_login">====SILAHKAN LOGIN====</p>
+        <div class="input-container">
+        <input class="input-field" type="text" name="username" placeholder="Username" id="username">
+    </div>
+     <div class="input-container">
+        <input class="input-field" type="password" name="password" placeholder="Password" id="password">
+      </div>
+        <center><input class="button" type="button" onclick="validateForm()" value="Login"></center>
+        <br>
+        lupa kata sandi?<a href="lupa kata sandi.html">Klik Disini</a>
+        <br>
+        Tidak punya akun? <a href="signup.html"> Buat Akun</a>
+    </div>
+
+    <script type="text/javascript">
+    function validateForm(inputtxt) {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var letters = /^[A-Za-z]+$/;
+        if (username == "" || password == "" && inputtxt.value.match(letters)) {
+            alert("Username atau password Harus Diisi");
+        }
+        else{
+           window.location = "home.html" 
+        }
+    }
+</script>
 </body>
 </html>
 
+
+	
